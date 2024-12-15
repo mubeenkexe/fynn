@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: 'Relationship of mélodrame';
+    src: url('/fonts/RelationshipOfMelodrame.ttf');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+    --lavender: #d7c4f2;
+    --peach: #ffd1ba;
+    --black: #363636;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    @apply font-playfairDisplay;
+}
+
+@layer utilities {
+    .layout {
+        @apply max-w-7xl mx-auto;
+    }
 }
