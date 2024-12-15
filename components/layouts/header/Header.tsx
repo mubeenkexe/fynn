@@ -12,21 +12,21 @@ const Header = () => {
         <header className="fixed w-full">
             <LayoutWrapper className={style.header}>
                 <Link href={'/'} className={style.logo}>
-                    TypeVerse.
+                    Furqan&apos;s Book.
                 </Link>
 
                 <nav className={style.nav}>
-                    {navLinks.map(
-                        (item, index) => (
-                            <Link
-                                key={index + crypto.randomUUID()}
-                                href={item.path}
-                                className={`${style.navLink} ${pathname === item.path && style.active}`}
-                            >
-                                {item.name}
-                            </Link>
-                        )
-                    )}
+                    {navLinks.map((item, index) => (
+                        <Link
+                            key={index + crypto.randomUUID()}
+                            href={item.path}
+                            className={`${style.navLink} ${
+                                pathname === item.path && style.active
+                            }`}
+                        >
+                            {item.name}
+                        </Link>
+                    ))}
                 </nav>
             </LayoutWrapper>
         </header>
