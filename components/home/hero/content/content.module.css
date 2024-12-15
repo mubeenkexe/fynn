@@ -1,0 +1,16 @@
+.contentContainer {
+    @apply relative flex flex-col items-center px-60 text-black gap-8 select-none;
+}
+
+.contentTitle {
+    @apply text-[152px] text-center leading-[1] z-10;
+    font-family: 'relationship of mélodrame';
+}
+
+.contentSubtitle {
+    @apply text-2xl;
+}
+
+.blurryBall {
+    @apply absolute w-80 h-80 bg-peach rounded-full blur-2xl left-44 -top-14;
+}
