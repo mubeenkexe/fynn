@@ -1,17 +1,13 @@
 .header {
-    @apply flex justify-between w-full py-8 px-6 italic text-black;
+    @apply flex justify-between w-full py-8 px-6 text-black;
 }
 
-.logo {
-    @apply text-3xl font-black;
-}
-
-.nav {
-    @apply flex gap-8;
+.desktopNav {
+    @apply hidden md:flex gap-8;
 }
 
 .navLink {
-    @apply hover:underline font-semibold;
+    @apply hover:underline font-bold italic;
 }
 
 .active {

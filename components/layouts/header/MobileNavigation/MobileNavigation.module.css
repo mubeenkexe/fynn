@@ -1,0 +1,19 @@
+.mobileNavigation {
+    @apply flex md:hidden;
+}
+
+.trigger {
+    @apply outline-none;
+}
+
+.navLink {
+    @apply font-bold italic text-5xl text-black text-center;
+}
+
+.content {
+    @apply flex flex-col items-center gap-10 h-screen justify-center bg-gradient-to-b from-lavender to-peach
+}
+
+.title {
+    @apply text-black
+}

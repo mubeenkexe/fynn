@@ -4,19 +4,27 @@ import Link from 'next/link';
 import style from './Header.module.css';
 import LayoutWrapper from '../layout-wrapper';
 import { usePathname } from 'next/navigation';
-import { navLinks } from '@/constants/navLinks';
+import { NAVLINKS } from '@/constants';
+import Image from 'next/image';
+import MobileNavigation from './MobileNavigation/MobileNavigation';
 
 const Header = () => {
     const pathname = usePathname();
     return (
-        <header className="fixed w-full">
+        <header className="fixed w-full z-50">
             <LayoutWrapper className={style.header}>
-                <Link href={'/'} className={style.logo}>
-                    Furqan&apos;s Book.
+                <Link href={'/'}>
+                    <Image
+                        src={'/images/Logo.png'}
+                        alt="Logo"
+                        width={102}
+                        height={36}
+                    />
                 </Link>
 
-                <nav className={style.nav}>
-                    {navLinks.map((item, index) => (
+                {/* Desktop Navigation */}
+                <nav className={style.desktopNav}>
+                    {NAVLINKS.map((item, index) => (
                         <Link
                             key={index + crypto.randomUUID()}
                             href={item.path}
@@ -28,6 +36,9 @@ const Header = () => {
                         </Link>
                     ))}
                 </nav>
+
+                {/* Mobile Navigation */}
+                <MobileNavigation />
             </LayoutWrapper>
         </header>
     );
