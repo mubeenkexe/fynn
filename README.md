@@ -1,10 +1,10 @@
-# Furqan's Book - A Personal Project
+# Fynn - A Personal Project
 
-Welcome to **Furqan's Book**, a personal project dedicated to creating a modern and cozy platform for my friend, an aspiring author, to share his stories and novels with the world. This project is a minimalistic, aesthetic website designed for readers and writers alike.
+Welcome to **Fynn**, a personal project dedicated to creating a modern and cozy platform for my friend, an aspiring author, to share his stories and novels with the world. This project is a minimalistic, aesthetic website designed for readers and writers alike.
 
 ## 🌟 Project Overview
 
-**Furqan's Book** is under active development, aiming to provide a space where my friend can:
+**Fynn** is under active development, aiming to provide a space where my friend can:
 
 - **Write and Publish** his books and chapters directly or upload files.
 - **Engage with Readers** through a seamless commenting and feedback system.
@@ -49,11 +49,11 @@ To set up the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mubeenkexe/furqans-book.git
+   git clone https://github.com/mubeenkexe/fynn.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd furqans-book
+   cd fynn
    ```
 3. Install dependencies:
    ```bash
@@ -74,7 +74,7 @@ To set up the project locally:
 ## 🗂️ Folder Structure
 
 ```plaintext
-furqans-book/
+fynn/
 ├── app/
 │   ├── globals.css
 │   ├── layout.tsx
