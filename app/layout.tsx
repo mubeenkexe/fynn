@@ -23,8 +23,6 @@ export const metadata: Metadata = {
         'Novels',
         'Reading',
     ],
-    themeColor: '#FFD1BA',
-    colorScheme: 'light',
 };
 
 export default function RootLayout({
