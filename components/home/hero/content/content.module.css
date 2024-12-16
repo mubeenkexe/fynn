@@ -1,9 +1,9 @@
 .contentContainer {
-    @apply relative flex flex-col items-center px-6 md:px-60 text-black gap-8 select-none;
+    @apply relative flex flex-col items-center px-12 md:px-60 text-black gap-8 select-none;
 }
 
 .contentTitle {
-    @apply text-9xl md:text-[152px] text-center leading-[1] z-10;
+    @apply text-8xl md:text-[152px] text-center leading-[1] z-10;
     font-family: 'relationship of mélodrame';
 }
 
