@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layouts/header';
+import NextTopLoader from 'nextjs-toploader';
 
 const playfairDisplay = Playfair_Display({
     variable: '--font-playfair-display',
@@ -32,6 +33,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={`${playfairDisplay.variable} antialiased`}>
+                <NextTopLoader color='#ffd1ba' height={10} showSpinner={false} />
                 <Header />
                 {children}
             </body>
