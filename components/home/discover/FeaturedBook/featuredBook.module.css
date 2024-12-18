@@ -1,0 +1,31 @@
+.container {
+    @apply flex w-full gap-11;
+}
+
+.posterHolder {
+    @apply flex flex-col gap-6;
+}
+
+.title {
+    @apply text-4xl font-semibold flex justify-between;
+}
+
+.tagline {
+    @apply italic text-lg;
+}
+
+.description {
+    @apply font-roboto text-subTexts mt-6 text-justify;
+}
+
+.details {
+    @apply max-w-lg;
+}
+
+.separator {
+    @apply my-6;
+}
+
+.info {
+    @apply flex flex-col gap-4;
+}
