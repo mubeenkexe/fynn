@@ -4,7 +4,7 @@ import Link from 'next/link';
 import style from './Header.module.css';
 import LayoutWrapper from '../layout-wrapper';
 import { usePathname } from 'next/navigation';
-import { NAVLINKS } from '@/constants';
+import { NAV_LINKS } from '@/constants';
 import Image from 'next/image';
 import MobileNavigation from './MobileNavigation/MobileNavigation';
 import { cn } from '@/lib/utils';
@@ -25,7 +25,7 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <nav className={style.desktopNav}>
-                    {NAVLINKS.map((item, index) => (
+                    {NAV_LINKS.map((item, index) => (
                         <Link
                             key={index + crypto.randomUUID()}
                             href={item.path}

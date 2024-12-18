@@ -8,7 +8,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from '@/components/ui/sheet';
-import { NAVLINKS, QUOTES } from '@/constants';
+import { NAV_LINKS, QUOTES } from '@/constants';
 import Link from 'next/link';
 
 const MobileNavigation = () => {
@@ -21,17 +21,14 @@ const MobileNavigation = () => {
                 <SheetTrigger className={style.trigger}>
                     <Menu fontSize={32} />
                 </SheetTrigger>
-                <SheetContent
-                    side="top"
-                    className={style.content}
-                >
+                <SheetContent side="top" className={style.content}>
                     <SheetHeader>
-                        <SheetTitle className={style.title}>Explore the World of Stories</SheetTitle>
-                        <SheetDescription>
-                            {getRandomQuote()}
-                        </SheetDescription>
+                        <SheetTitle className={style.title}>
+                            Explore the World of Stories
+                        </SheetTitle>
+                        <SheetDescription>{getRandomQuote()}</SheetDescription>
                     </SheetHeader>
-                    {NAVLINKS.map((item, index) => (
+                    {NAV_LINKS.map((item, index) => (
                         <Link
                             key={index + crypto.randomUUID()}
                             href={item.path}
