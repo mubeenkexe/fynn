@@ -14,11 +14,11 @@
 }
 
 body {
-    @apply font-playfairDisplay;
+    @apply font-playfairDisplay bg-gradient-to-b from-[color:var(--lavender)] to-white;
 }
 
 @layer utilities {
     .layout {
-        @apply max-w-7xl mx-auto;
+        @apply max-w-7xl mx-auto w-full;
     }
 }
