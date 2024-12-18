@@ -1,7 +1,5 @@
-const Discover = () => {
-  return (
-    <div>Discover</div>
-  )
-}
+import DiscoverComponent from '@/components/home/discover';
 
-export default Discover
+const Discover = () => <DiscoverComponent />;
+
+export default Discover;
