@@ -1,12 +1,20 @@
 import type { Metadata } from 'next';
-import { Playfair_Display } from 'next/font/google';
+// eslint-disable-next-line camelcase
+import { Playfair_Display, Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layouts/header';
 import NextTopLoader from 'nextjs-toploader';
+import React from 'react';
 
 const playfairDisplay = Playfair_Display({
     variable: '--font-playfair-display',
     subsets: ['latin'],
+});
+
+const roboto = Roboto({
+    variable: '--font-roboto',
+    subsets: ['latin'],
+    weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -32,8 +40,14 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${playfairDisplay.variable} antialiased`}>
-                <NextTopLoader color='#ffd1ba' height={10} showSpinner={false} />
+            <body
+                className={`${playfairDisplay.variable} ${roboto.variable} antialiased`}
+            >
+                <NextTopLoader
+                    color="#ffd1ba"
+                    height={10}
+                    showSpinner={false}
+                />
                 <Header />
                 {children}
             </body>
