@@ -1,0 +1,7 @@
+.container {
+    @apply flex flex-col items-center justify-center gap-20 h-screen;
+}
+
+.title {
+    @apply text-center text-5xl font-relation;
+}
