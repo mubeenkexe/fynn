@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 export default {
     darkMode: ['class'],
@@ -8,21 +9,24 @@ export default {
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
-    	extend: {
-    		colors: {
-    			black: 'var(--black)',
-    			lavender: 'var(--lavender)',
-    			peach: 'var(--peach)'
-    		},
-    		fontFamily: {
-    			playfairDisplay: 'var(--font-playfair-display)'
-    		},
-    		borderRadius: {
-    			lg: 'var(--radius)',
-    			md: 'calc(var(--radius) - 2px)',
-    			sm: 'calc(var(--radius) - 4px)'
-    		}
-    	}
+        extend: {
+            colors: {
+                black: 'var(--black)',
+                lavender: 'var(--lavender)',
+                peach: 'var(--peach)',
+                subTexts: '#484848',
+            },
+            fontFamily: {
+                playfairDisplay: 'var(--font-playfair-display)',
+                roboto: 'var(--font-roboto)',
+                relation: 'relationship of mélodrame',
+            },
+            borderRadius: {
+                lg: 'var(--radius)',
+                md: 'calc(var(--radius) - 2px)',
+                sm: 'calc(var(--radius) - 4px)',
+            },
+        },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [tailwindcssAnimate],
 } satisfies Config;

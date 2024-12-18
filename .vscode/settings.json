@@ -1,6 +1,6 @@
 {
-    "cSpell.words": [
-        "furqans",
-        "mélodrame"
-    ]
+    "cSpell.words": ["furqans", "mélodrame"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
 }
