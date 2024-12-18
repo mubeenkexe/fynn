@@ -7,11 +7,12 @@ import { usePathname } from 'next/navigation';
 import { NAVLINKS } from '@/constants';
 import Image from 'next/image';
 import MobileNavigation from './MobileNavigation/MobileNavigation';
+import { cn } from '@/lib/utils';
 
 const Header = () => {
     const pathname = usePathname();
     return (
-        <header className="fixed w-full z-50">
+        <header className={cn('w-full z-50', pathname === '/' && 'fixed')}>
             <LayoutWrapper className={style.header}>
                 <Link href={'/'}>
                     <Image
