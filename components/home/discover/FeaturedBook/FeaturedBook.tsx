@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import style from './featuredBook.module.css';
-import Button from '@/components/common/button';
-import LayoutWrapper from '@/components/layouts/layout-wrapper';
-import { Separator } from '@/components/ui/separator';
-import StarRating from './StarRating';
+import Image from "next/image";
+import style from "./featuredBook.module.css";
+import Button from "@/components/common/button";
+import LayoutWrapper from "@/components/layouts/layout-wrapper";
+import { Separator } from "@/components/ui/separator";
+import StarRating from "./StarRating";
 
 interface FeaturedBookProps {
     poster: string;
@@ -18,6 +18,19 @@ interface FeaturedBookProps {
     pages: number;
     characters: string;
 }
+
+const BookInfo = ({
+    label,
+    value,
+}: {
+    label: string;
+    value: string | number;
+}) => (
+    <div className="flex justify-between font-roboto">
+        <p className="font-medium">{label}</p>
+        <p className="w-2/4 text-start text-subTexts">{value}</p>
+    </div>
+);
 
 const FeaturedBook = ({
     poster,
@@ -62,26 +75,18 @@ const FeaturedBook = ({
 
                     <div className={style.info}>
                         {[
-                            { label: 'Original Title', value: title },
-                            { label: 'Author', value: author },
-                            { label: 'Language', value: language },
-                            { label: 'Characters', value: characters },
-                            { label: 'Genre', value: genre },
+                            { label: "Original Title", value: title },
+                            { label: "Author", value: author },
+                            { label: "Language", value: language },
+                            { label: "Characters", value: characters },
+                            { label: "Genre", value: genre },
                             {
-                                label: 'Publication Date',
+                                label: "Publication Date",
                                 value: publicationDate,
                             },
-                            { label: 'Pages', value: pages },
+                            { label: "Pages", value: pages },
                         ].map(({ label, value }) => (
-                            <span
-                                key={label}
-                                className="flex justify-between font-roboto"
-                            >
-                                <p className="font-medium">{label}</p>{' '}
-                                <p className="w-2/4 text-start text-subTexts">
-                                    {value}
-                                </p>
-                            </span>
+                            <BookInfo key={label} label={label} value={value} />
                         ))}
                     </div>
                 </div>
