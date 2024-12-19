@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface LayoutWrapperProps {
     children: React.ReactNode;
     className?: string;
