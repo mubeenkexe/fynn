@@ -1,5 +1,11 @@
 {
-    "cSpell.words": ["furqans", "mélodrame"],
+    "cSpell.words": [
+        "Furqan",
+        "furqans",
+        "Hussain",
+        "Junaid",
+        "mélodrame"
+    ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     }

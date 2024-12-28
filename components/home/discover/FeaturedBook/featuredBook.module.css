@@ -1,9 +1,9 @@
 .container {
-    @apply flex w-full gap-11;
+    @apply flex flex-col md:flex-row w-full gap-11 px-10;
 }
 
 .posterHolder {
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-6 items-center;
 }
 
 .title {

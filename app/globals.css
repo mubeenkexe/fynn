@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Relationship of mélodrame';
-    src: url('/fonts/RelationshipOfMelodrame.ttf');
+    font-family: "Relationship of mélodrame";
+    src: url("/fonts/RelationshipOfMelodrame.ttf");
 }
 
 :root {

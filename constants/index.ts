@@ -25,8 +25,7 @@ export const DUMMY_FEATURED_BOOK = {
     rating: 4,
     title: 'Cassandra',
     author: 'Furqan Hussain',
-    description:
-        'Junaid, a solitary and introverted college student, stumbles upon an unexpected message on a chat app, breaking the monotony of his isolated routine. The sender, "Cassandra," appears mysterious, drawing Junaid into an uncertain yet thrilling connection. As Junaid balances the weight of his loneliness with the allure of this new interaction, he embarks on a journey that could unravel the secrets of both his heart and Cassandra\'s identity. Will this digital friendship evolve into something profound, or will it fade into the vastness of the virtual world?',
+    description: 'Junaid, a solitary and introverted college student, stumbles upon an unexpected message on a chat app, breaking the monotony of his isolated routine. The sender, "Cassandra," appears mysterious, drawing Junaid into an uncertain yet thrilling connection. As Junaid balances the weight of his loneliness with the allure of this new interaction, he embarks on a journey that could unravel the secrets of both his heart and Cassandra\'s identity.\n Will this digital friendship evolve into something profound, or will it fade into the vastness of the virtual world?',
     tagline: 'An enigmatic connection sparks a journey of self-discovery.',
     publicationDate: '2023-01-01',
     genre: 'Friendship, Love',

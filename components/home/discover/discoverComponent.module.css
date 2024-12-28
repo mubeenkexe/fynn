@@ -1,7 +1,7 @@
 .container {
-    @apply flex flex-col items-center justify-center gap-20 h-screen;
+    @apply flex flex-col gap-20 h-full;
 }
 
 .title {
-    @apply text-center text-5xl font-relation;
+    @apply text-center text-5xl font-relation mt-40;
 }

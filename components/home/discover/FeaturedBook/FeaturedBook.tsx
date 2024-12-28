@@ -52,8 +52,8 @@ const FeaturedBook = ({
                     <Image
                         src={poster}
                         alt="Book Poster"
-                        width={300}
-                        height={500}
+                        width={250}
+                        height={280}
                         className="h-auto rounded-2xl"
                     />
                     <Button type="button" className="w-full">
