@@ -12,7 +12,12 @@ import { cn } from "@/lib/utils";
 const Header = () => {
     const pathname = usePathname();
     return (
-        <header className={cn("w-full z-50 fixed")}>
+        <header
+            className={cn(
+                "w-full z-50 fixed",
+                pathname.startsWith("/read") && "relative"
+            )}
+        >
             <LayoutWrapper className={style.header}>
                 <Link href={"/"}>
                     <Image
