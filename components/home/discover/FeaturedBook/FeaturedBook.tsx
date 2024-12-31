@@ -46,7 +46,10 @@ const FeaturedBook = ({
     characters,
 }: FeaturedBookProps) => {
     return (
-        <LayoutWrapper>
+        <LayoutWrapper className="my-10 flex flex-col gap-10">
+            <h1 className="mx-10 text-center text-4xl font-semibold uppercase text-subTexts md:text-start">
+                Featured Book
+            </h1>
             <div className={style.container}>
                 <div className={style.posterHolder}>
                     <Image
