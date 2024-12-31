@@ -14,7 +14,7 @@
 }
 
 body {
-    @apply font-playfairDisplay bg-gradient-to-b from-[color:var(--lavender)] to-white;
+    @apply font-playfairDisplay bg-gradient-to-b from-[color:var(--lavender)] to-white min-h-screen;
 }
 
 @layer utilities {
