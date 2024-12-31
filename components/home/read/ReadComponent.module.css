@@ -1,0 +1,3 @@
+.container {
+    @apply h-screen rounded-2xl
+}
