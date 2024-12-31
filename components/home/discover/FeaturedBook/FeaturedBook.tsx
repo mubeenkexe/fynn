@@ -56,8 +56,12 @@ const FeaturedBook = ({
                         height={280}
                         className="h-auto rounded-2xl"
                     />
-                    <Button type="button" className="w-full">
-                        Read {title}
+                    <Button
+                        href={`/read?title=${title}?id=${crypto.randomUUID()}`}
+                        type="button"
+                        className="w-full"
+                    >
+                        Start Reading
                     </Button>
                 </div>
 
