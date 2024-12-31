@@ -7,13 +7,13 @@
 }
 
 .navLink {
-    @apply font-bold italic text-5xl text-black text-center;
+    @apply font-bold italic text-4xl text-black flex flex-row text-center gap-2;
 }
 
 .content {
-    @apply flex flex-col items-center gap-10 h-screen justify-center bg-gradient-to-b from-lavender to-peach
+    @apply flex flex-col items-center gap-10 h-screen justify-center bg-gradient-to-b from-lavender to-peach border-none;
 }
 
 .title {
-    @apply text-black
+    @apply text-black;
 }

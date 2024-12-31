@@ -1,5 +1,5 @@
-import { Menu } from 'lucide-react';
-import style from './MobileNavigation.module.css';
+import { Menu } from "lucide-react";
+import style from "./MobileNavigation.module.css";
 import {
     Sheet,
     SheetContent,
@@ -7,9 +7,10 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from '@/components/ui/sheet';
-import { NAV_LINKS, QUOTES } from '@/constants';
-import Link from 'next/link';
+} from "@/components/ui/sheet";
+import { NAV_LINKS, QUOTES } from "@/constants";
+import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
 
 const MobileNavigation = () => {
     function getRandomQuote() {
@@ -21,7 +22,7 @@ const MobileNavigation = () => {
                 <SheetTrigger className={style.trigger}>
                     <Menu fontSize={32} />
                 </SheetTrigger>
-                <SheetContent side="top" className={style.content}>
+                <SheetContent className={style.content}>
                     <SheetHeader>
                         <SheetTitle className={style.title}>
                             Explore the World of Stories
@@ -34,7 +35,7 @@ const MobileNavigation = () => {
                             href={item.path}
                             className={style.navLink}
                         >
-                            {item.name}
+                            {item.name} <GoArrowUpRight fontSize={16} />
                         </Link>
                     ))}
                 </SheetContent>
