@@ -8,6 +8,7 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import MobileNavigation from "./MobileNavigation/MobileNavigation";
 import { cn } from "@/lib/utils";
+import SignIn from "@/components/auth/sign-is";
 
 const Header = () => {
     const pathname = usePathname();
@@ -34,13 +35,13 @@ const Header = () => {
                         <Link
                             key={index + crypto.randomUUID()}
                             href={item.path}
-                            className={`${style.navLink} ${
-                                pathname === item.path && style.active
-                            }`}
+                            className={`${style.navLink} ${pathname === item.path && style.active
+                                }`}
                         >
                             {item.name}
                         </Link>
                     ))}
+                    <SignIn />
                 </nav>
 
                 {/* Mobile Navigation */}
